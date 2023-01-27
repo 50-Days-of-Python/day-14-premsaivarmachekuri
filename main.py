@@ -1,8 +1,9 @@
-def flat_list(l):
-    # input nested list is stored in l
-    # Insert Code below
-    sdl=[]
-    
-    # Insert Code Above
-    # Return single-dimension list.
-    return sdl
+def flatten_list(l):
+    flat_list = []
+    for sublist in nested_list:
+        if type(sublist) == list:
+            flat_list.extend(flatten_list(sublist))
+        else:
+            flat_list.append(sublist)
+    return flat_list
+
