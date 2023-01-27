@@ -1,9 +1,10 @@
 def flatten_list(l):
-    flat_list = []
-    for sublist in l:
-        if type(sublist) == list:
-            flat_list.extend(flatten_list(sublist))
-        else:
-            flat_list.append(sublist)
-    return flat_list
-
+    new_list = []
+    for i in l:
+        new_list+=i
+    x = "["
+    for i in new_list:
+        x+=str(i)
+        x+=","
+    x = x[:-1]+"]"
+    return x
