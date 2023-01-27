@@ -1,4 +1,4 @@
-def flatten_list(l):
+def flat_list(l):
     new_list = []
     for i in l:
         new_list+=i
