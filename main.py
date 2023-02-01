@@ -1,8 +1,6 @@
 def flat_list(l):
-    # input nested list is stored in l
-    # Insert Code below
-    sdl=[]
+    new_list = []
+    for i in l:
+        new_list+=i
     
-    # Insert Code Above
-    # Return single-dimension list.
-    return sdl
+    return new_list
